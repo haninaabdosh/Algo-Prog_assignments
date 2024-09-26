@@ -56,5 +56,4 @@ while True:
     else:
         print("Invalid choice. Please select 1, 2, 3, or 4.")
 
-
-
+# code works well, very nice with input validation and error handling, it would be better to add lines or spaces between the menu and items so the user is not confused. also it is better to start with an empty list instead of already filled. overall still good :D
