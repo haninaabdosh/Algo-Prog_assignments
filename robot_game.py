@@ -11,7 +11,7 @@ power_cells_collected = 0
 city_zones = {
     "Uptown": ["power cell", "battery pack", "repair kit"],
     "Downtown": ["power cell", "short circuit", "battery pack"],
-    "Industrial Area": ["power cell", "short circuit", "power cell"],
+    "Industrial": ["power cell", "short circuit", "power cell"],
     "Park": ["short circuit", "battery pack", "power cell"],
     "Residential": ["battery pack", "power cell", "short circuit"]
 }
@@ -110,7 +110,7 @@ def main_game():
     print("Welcome to the Robot Adventure Game!")
     while battery_level > 0 and power_cells_collected < 5:
         display_status() #provides information about the robot's current state.
-        zone = input("\nChoose a zone to explore (Uptown, Downtown, Industrial Area, Park, Residential): ")
+        zone = input("\nChoose a zone to explore (Uptown, Downtown, Industrial, Park, Residential): ")
         
         #if an invalid zone is entered, the loop will continue to the next iteration, prompting the user to enter a valid zone again
         if zone not in city_zones:
